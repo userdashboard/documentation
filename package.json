@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@userdashboard/dashboard": "^1.0.326",
+    "@userdashboard/dashboard": "^1.0.327",
     "js-beautify": "^1.13.0",
     "remarkable": "^2.0.1",
     "server-html": "^9.0.0",
