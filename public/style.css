@@ -1,0 +1,163 @@
+html { font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif; font-size: 90%; color: #000; }
+body { background-color: #FFF; color: #000; padding: 0; margin: 0; width: 100%; height: 100% }
+table { width: 100%; max-width: 90rem; border-collapse: collapse; margin-bottom: 2rem }
+th { background-color: #333; color: #FFF; text-align: left }
+th,
+td { padding: 0.5rem 1rem 0.5rem 0.5rem; border: 1px solid #333 }
+td { background-color: #FFF }
+tr.alt td { background-color: #DDD }
+h1 { margin: 0; font-size: 1.3rem; padding: 0; margin-bottom: 1rem }
+h2 { margin: 0; font-size: 1.2rem; padding: 0; margin-bottom: 1rem }
+h3 { margin: 0; font-size: 1.1rem; padding: 0; margin-bottom: 1rem }
+li { line-height: 2rem; list-style-type: none }
+li h2 { text-transform: uppercase; font-weight: normal; font-size: 0.9rem; color: #666; padding: 0; margin: 0.25rem 0 0 0 }
+li ul { margin: 0; padding-left: 0.5rem }
+p { max-width: 90rem }
+a { color: #117; text-decoration: none; font-size: 0.9rem }
+a:hover { color: #07C }
+
+.section-container { padding: 1rem }
+.full { max-width: 100% }
+p.note { font-size: 1.2rem; max-width: 36rem; line-height: 1.6rem; margin-top: 0.5rem }
+.super-navbar { margin: 0; padding: 1rem 1rem 0 1rem }
+.super-navbar a { font-size: 1rem; color: #117; font-weight: normal !important }
+
+
+header {  background: linear-gradient(30deg, #117, #715, #ea3); color: #FFF; width: 100% }
+header h1 { padding: 1rem 1rem 0.5rem 1rem; margin: 0 }
+header p { display: inline-block; margin: 0; padding: 0 0 1rem 1rem; font-size: 1.4rem; color: rgba(255, 255, 255, 0.5) }
+header a { font-size: 1.4rem; color: rgba(255, 255, 255, 0.75); font-size: 1.4rem }
+
+.navigation { margin: 0 }
+.navigation ul { margin: 0; padding: 1rem; max-width: 16rem }
+.navigation ul ul { padding: 0 }
+.navigation li { display: inline-block !important; width: 8%; min-width: 16rem; vertical-align: top }
+.navigation li h2 { font-size: 1rem; padding: 0; color: rgba(255, 255, 255, 0.5) }
+.navigation li li { margin: 0; display: block; width: auto; min-width: none }
+.navigation a { font-weight: bold; color: rgba(255, 255, 255, 0.75); font-size: 0.9rem }
+.navigation a:hover { color: #FFF; text-decoration: underline }
+.navigation img { width: 2rem; height: 2rem; display: inline-block; fill: #369 }
+
+/* content */
+.content { width: 100% }
+.content li,
+.content p,
+.content pre,
+.content code,
+.content span { font-size: 0.9rem; line-height: 1.6rem; margin: 0 0 2rem 0 }
+.content th,
+.content td { font-size: 0.9rem; line-height: 1.2rem; padding: 0.25rem }
+.content p { margin-bottom: 1rem }
+.content p code { color: #900; font-size: inherit }
+.content p a { text-decoration: underline }
+.content li { line-height: 1.2rem; margin: 0.5rem; padding: 0 }
+.content li h2 { margin-bottom: 0 }
+.content ul { margin-left: 0; padding-left: 0 }
+.content ol { margin-left: 0; padding-left: 1rem }
+.content ol li { list-style-type: number }
+.content pre { display: inline-block; line-height: 1.2rem; background-color: #FFC; border-left: 1px dashed #999; overflow: auto; max-width: 100%; margin: 0 0 2rem 0; padding: 0 }
+.content pre code { display: block; margin: 0; padding: 0.5rem }
+.content td pre { background-color: transparent; border: none}
+
+.devices { margin: 0 0 2rem 0; padding: 0; list-style-type: none; display: inline-block }
+.devices li { cursor: pointer; color: #666; display: inline-block; font-size: 1rem; margin-right: 1rem; margin-left: 1rem; padding: 0.5rem }
+.devices li:hover { color: #333 }
+.devices li:first-of-type { margin-left: 0 }
+.devices li:last-of-type { border-right: 0; margin-right: 2rem } 
+.devices li.current { background-color: #DDD; border-radius: 0.25rem }
+
+.screenshots,
+.screenshots { list-style-type: none; margin: 0 0 2rem 0; padding: 0; width: 100% }
+.screenshots li { margin: 0 0 1rem 0; width: 100%; max-width: 100%; vertical-align: top; text-align: center; background-color: #DDD }
+.screenshots img { width: 100%; height: auto; display: block }
+.screenshots a { display: inline-block; margin-bottom: 0 }
+.screenshots a.screenshot-link { padding: 0.5rem }
+.screenshots a.route-link,
+.screenshots span.description { display: inline-block; margin: 0.5rem }
+
+@media (min-width: 800px) {
+    .screenshots li { max-width: 30rem; display: inline-block; margin-right: 1rem }
+}
+
+div.ui-container { margin-top: 1rem }
+div.api-via { margin-bottom: 1rem; margin: 0 0 2rem 0; color: #666; font-style: italic; font-size: 0.9rem }
+pre.example { max-height: 24rem; overflow: scroll; padding: 0.1rem; background-color: #DDD }
+a.home { font-weight: bold; margin: 1rem; display: inline-block }
+span.nodejs { display: inline-block; font-size: 1rem; margin: 0.5rem 0 1rem 0 }
+span.returns { display: block; margin: 0 0 2rem 0; color: #666; font-style: italic; font-weight: bold; font-size: 1.1rem }
+span.get { color: darkgreen }
+span.post { color: darkblue }
+span.patch { color: purple }
+span.delete { color: red }
+.api { font-family: monospace; margin: 1rem 0 }
+.api li { font-size: 0.9rem; margin: 0 0 1rem 0; padding: 0 }
+.api li span { color: #666; font-size: 0.7rem; max-width: 100%; margin: 0 }
+.api li li { display: inline; font-size: 0.8rem }
+.api ul { display: inline }
+.api .method { color: #FFF; border-radius: 0.25rem; font-size: 0.7rem; line-height: 0.9rem; padding: 0.25rem; margin-left: 0.25rem }
+.api .get { background-color: darkgreen }
+.api .post { background-color: darkblue }
+.api .patch { background-color: purple }
+.api .delete { background-color: red }
+.api .nodejs { display: block; color: #666; margin: 0 }
+.api .default { display: block; margin: 0 }
+.api .example { display: block; margin: 0 }
+
+pre { margin: 0 0 2rem 2rem }
+td ul { margin: 0; padding: 0 }
+
+/* dashboard stencil on index page */
+.dashboard { width: 100%; max-width: 90rem; height: 30%; border-radius: 0.5rem; overflow: hidden; border: 1px dotted #333; box-shadow: 0 0 1rem #999; margin-bottom: 1rem }
+.dashboard .header { background-color: #DDD; justify-content: space-between; display: flex; flex-direction: row; height: 3rem; line-height: 3rem; color: inherit; width: 100% }
+.dashboard .header h2 { flex-direction: row; align-self: flex-start; font-weight: normal; margin: 0; }
+.dashboard .header h2 span { display: inline-block; height: 1rem; width: 8rem; background-color: #CCC; padding: 0 1rem; line-height: 1rem; margin: 1rem 0 0 1rem }
+.dashboard .header img { width: 1.5rem; height: 1.5rem; margin-top: 0.75rem; display: block; float: right; margin-left: 0.5rem }
+.dashboard .header .menu { height: 3rem; float: right; color: rgba(255, 255, 255, 0.75); line-height: 3rem; font-size: 0.9rem; margin-right: 1rem }
+.dashboard .header .menu span { display: inline-block; height: 3rem; line-height: 3rem }
+
+/* solarized dark theme, Original Style from ethanschoonover.com/solarized (c) Jeremy Hull <sourdrums@gmail.com> */
+pre,
+.hljs { display: block; overflow-x: auto; padding: 2rem; background: beige; color: #444 }
+.hljs-comment, 
+.hljs-quote { color: #586e75 }
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-addition { color: #859900 }
+.hljs-number, .hljs-string, .hljs-meta .hljs-meta-string, .hljs-literal, .hljs-doctag, .hljs-regexp { color: #2aa198 }
+.hljs-title, .hljs-section, .hljs-name, .hljs-selector-id, .hljs-selector-class { color: #268bd2 }
+.hljs-attribute, .hljs-attr, .hljs-variable, .hljs-template-variable, .hljs-class .hljs-title, .hljs-type { color: #b58900 }
+.hljs-symbol, .hljs-bullet, .hljs-subst, .hljs-meta, .hljs-meta .hljs-keyword, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-link { color: #cb4b16 }
+.hljs-built_in, .hljs-deletion { color: #dc322f }
+.hljs-formula { background: #073642 }
+.hljs-emphasis { font-style: italic }
+.hljs-strong { font-weight: bold }
+
+/* tree map for sitemaps via https://www.cssscript.com/clean-tree-diagram/ */
+.tree-body { display: table }
+.tree-body .devices { margin-top: 1rem }
+.tree-body #sitemap { margin-top: 5rem }
+.tree,
+.tree ul,
+.tree li { list-style: none; margin: 0; padding: 0; position: relative }
+.tree { margin: 0 0 1em; text-align: center }
+.tree,
+.tree ul { display: table }
+.tree ul { width: 100% }
+.tree li { display: table-cell; padding: 2rem 0; vertical-align: top }
+.tree li:before { border-bottom: 0.1rem dotted #333; content: ""; left: 0; position: absolute; right: 0; top: 0 }
+.tree li:first-child:before { left: 50% }
+.tree li:last-child:before { right: 50% }
+.tree code,
+.tree a { color: #333 !important; display: inline-block; margin: 0 1rem 2rem; padding: 0.25rem; position: relative }
+.tree ul:before,
+.tree code:before,
+.tree a:before { border-left: 0.1rem dotted #333; content: ""; height: 2rem; left: 50%; position: absolute }
+.tree ul:before { top: -2rem }
+.tree code:before,
+.tree a:before { top: -2rem }
+.tree>li { margin-top: 0 }
+.tree>li:before,
+.tree>li:after,
+.tree>li>code:before,
+.tree>li>a:before { border: none }
+.tree img { max-width: 24rem; margin-bottom: 0.5rem; border: 1px solid #CCC }

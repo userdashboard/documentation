@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html data-navbar="navbar.html">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script async src="/public/highlight.min.js"></script>
+    <script src="/public/browser.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a name="top" id="top"></a>
+    <div class="body-container">
+      <header>
+        <h1>Dashboard</h1>
+        <section id="navigation" class="navigation"></section>
+      </header>
+      <div class="section-container">
+        <section class="full">
+          <a name="content" id="content"></a>
+          <div class="content">
+            <div id="user-container">
+              <h2>User API</h2>
+              <ul id="user-routes-table" class="api"></ul>
+            </div>
+            <div id="administrator-container">
+              <h2>Administrator API</h2>
+              <ul id="administrator-routes-table" class="api"></ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <template id="parameter-item-template">
+      <li>${parameter.name}</li>
+    </template>
+    <template id="route-row-template">
+      <li id="route-${route.id}">
+        <a href="${route.url}">${route.url}</a> 
+        <span class="method ${route.verb}">${route.verb}</span> 
+        <span class="nodejs">await ${route.nodejs}.${route.verb.toLowerCase()}(req)</span>
+        <span id="url-container-${route.id}">
+          URL
+          <ul id="url-parameters-${route.id}"></ul>
+        </span>
+        <span id="post-container-${route.id}">
+          POST
+          <ul id="post-parameters-${route.id}"></ul>
+        </span>
+      </li>
+    </template>
+  </body>
+</html>

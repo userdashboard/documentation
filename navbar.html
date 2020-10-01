@@ -1,0 +1,92 @@
+<menu id="navbar-handle" class="super-navbar" style="display: none">
+  <li><a href="#" title="Show menu">Show navigation menu</a></li>
+</menu>
+
+<ul id="navbar-menu" style="display: block">
+  <li>
+    <h2>Dashboard</h2>
+    <ul>
+      <li><a href="/dashboard">Documentation</a></li>
+      <li><a href="/dashboard-configuration">Configuration variables</a></li>
+      <li><a href="/dashboard-sitemap">Visual sitemap</a></li>
+      <li><a href="/dashboard-ui">UI index</a></li>
+      <li><a href="/dashboard-api">API index</a></li>
+    </ul>
+  </li>
+  <li>
+    <h2>MaxMind GeoIP</h2>
+    <ul>
+      <li><a href="/maxmind-geoip-module">Documentation</a></li>
+      <li><a href="/maxmind-geoip-api">API index</a></li>
+    </ul>
+  </li>
+  <li>
+    <h2>Organizations</h2>
+    <ul>
+      <li><a href="/organizations-module">Documentation</a></li>
+      <li><a href="/organizations-configuration">Configuration variables</a></li>
+      <li><a href="/organizations-sitemap">Visual sitemap</a></li>
+      <li><a href="/organizations-ui">UI index</a></li>
+      <li><a href="/organizations-api">API index</a></li>
+    </ul>
+  </li>
+  <li>
+    <h2>Stripe Connect</h2>
+    <ul>
+      <li><a href="/stripe-connect-module">Documentation</a></li>
+      <li><a href="/stripe-connect-configuration">Configuration variables</a></li>
+      <li><a href="/stripe-connect-sitemap">Visual sitemap</a></li>
+      <li><a href="/stripe-connect-ui">UI index</a></li>
+      <li><a href="/stripe-connect-api">API index</a></li>
+    </ul>
+  </li>
+  <li>
+    <h2>Stripe Subscriptions</h2>
+    <ul>
+      <li><a href="/stripe-subscriptions-module">Documentation</a></li>
+      <li><a href="/stripe-subscriptions-configuration">Configuration variables</a></li>
+      <li><a href="/stripe-subscriptions-sitemap">Visual sitemap</a></li>
+      <li><a href="/stripe-subscriptions-ui">UI index</a></li>
+      <li><a href="/stripe-subscriptions-api">API index</a></li>
+    </ul>
+  </li>
+  <li>
+    <h2>Example app</h2>
+    <ul>
+      <li><a href="/example-web-app">Documentation</a></li>
+      <li><a href="/example-web-app-sitemap">Visual sitemap</a></li>
+      <li><a href="/example-web-app-ui">UI index</a></li>
+    </ul>
+  </li>
+  <li>
+    <h2>Example subscription app</h2>
+    <ul>
+      <li><a href="/example-subscription-web-app">Documentation</a></li>
+      <li><a href="/example-subscription-web-app-sitemap">Visual sitemap</a></li>
+      <li><a href="/example-subscription-web-app-ui">UI index</a></li>
+    </ul>
+  </li>
+</ul>
+
+<style>
+  .reveal,
+  .reveal ul { display: block }
+</style>
+
+<script>
+  var menu = document.getElementById("navbar-menu")
+  menu.style.display = "none"
+  var handle = document.getElementById("navbar-handle")
+  handle.style.display = "block"
+  handle.onclick = function (e) {
+    if (menu.style.display === "block") {
+      menu.style.display = "none"
+      menu.className = ""
+      handle.firstElementChild.firstElementChild.innerHTML = "Show navigation menu"
+    } else {
+      menu.style.display = "block"
+      menu.className = "reveal"
+      handle.firstElementChild.firstElementChild.innerHTML = "Hide navigation menu"
+    }
+  }
+</script>

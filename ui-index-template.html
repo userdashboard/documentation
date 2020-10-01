@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html data-navbar="navbar.html">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script async src="/public/highlight.min.js"></script>
+    <script src="/public/browser.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/wa-mediabox.min.css">
+    <script async src="/public/wa-mediabox.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <a name="top" id="top"></a>
+    <div class="body-container">
+      <header>
+        <h1>Dashboard</h1>
+        <section id="navigation" class="navigation"></section>
+      </header>
+      <div class="section-container">
+        <section class="full">
+          <a name="content" id="content"></a>
+          <div class="content">
+            <div class="example-container" id="example-container">
+              <h2>Example usage</h2>
+              <p>These pages demonstrate usage by users and administrators.</p>
+              <ul id="example-routes-list" class="screenshots desktop"></ul>
+            </div>
+            <div class="ui-container" id="guest-container">
+              <h2>Guest routes</h2>
+              <p>These pages can be browsed by anonymous guests.</p>
+              <ul id="guest-routes-list" class="screenshots desktop"></ul>
+            </div>
+            <div class="ui-container" id="user-container">
+              <h2>User routes</h2>
+              <p>These pages require the user be signed in.</p>
+              <ul id="user-routes-list" class="screenshots desktop"></ul>
+            </div>
+            <div class="ui-container" id="administrator-container">
+              <h2>Administrator routes</h2>
+              <p>These pages are only accessible to administrators.</p>
+              <ul id="administrator-routes-list" class="screenshots desktop"></ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <template id="route-template">
+      <li>
+        <a class="screenshot-link" href="${route.src}"><img data-src="${route.src}"></a>
+        <a class="route-link" href="${route.url}">"${route.title}" navigation guide</a>
+      </li>
+    </template>
+  </body>
+</html>

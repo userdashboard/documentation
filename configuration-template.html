@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-navbar="navbar.html">
+<head>
+  <title></title>
+  <link rel="stylesheet" href="/public/style.css">
+  <script async src="/public/highlight.min.js"></script>
+  <script src="/public/browser.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <a name="top" id="top"></a>
+  <div class="body-container">
+    <header>
+      <h1>Dashboard</h1>
+      <section id="navigation" class="navigation"></section>
+    </header>
+    <div class="section-container">
+      <section class="full">
+        <a name="content" id="content"></a>
+        <div class="content">
+          <p>Environment variables can be configured in your operating system.  They hold pieces of information that live outside of your code, like database connection strings.  Configuring or defining environment variables depends on your operating system: <a href="https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/">Linux</a>, <a href="https://osxdaily.com/2015/07/28/set-enviornment-variables-mac-os-x/">macOS</a>, <a href="https://www.techjunkie.com/environment-variables-windows-10/">Windows server &amp; desktop</a>.</p>
+          <ul id="variables-table" class="api"></ul>
+        </div>
+      </section>
+    </div>
+  </div>
+  <template id="variable-row-template">
+    <li>
+      ${variable.name}
+      <span class="default">DEFAULT ${variable.default || "unset"}</span>
+      <span class="value">EXAMPLE ${variable.value}</span>
+    </li>
+  </template>
+</body>
+</html>
