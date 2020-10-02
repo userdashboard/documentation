@@ -29,8 +29,8 @@ header p { display: inline-block; margin: 0; padding: 0 0 1rem 1rem; font-size: 
 header a { font-size: 1.4rem; color: rgba(255, 255, 255, 0.75); font-size: 1.4rem }
 
 .navigation { margin: 0 }
-.navigation ul { margin: 0; padding: 1rem; max-width: 16rem }
-.navigation ul ul { padding: 0 }
+.navigation ul { margin: 0; padding: 1rem }
+.navigation ul ul { padding: 0; max-width: 16rem }
 .navigation li { display: inline-block !important; width: 8%; min-width: 16rem; vertical-align: top }
 .navigation li h2 { font-size: 1rem; padding: 0; color: rgba(255, 255, 255, 0.5) }
 .navigation li li { margin: 0; display: block; width: auto; min-width: none }
